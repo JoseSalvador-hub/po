@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito digital</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        table{
+           width: 30%;
+           border: solid 1px;
+        }
+        td{
+            border: solid 1px;
+        }
+        th{
+            border: solid 1px;
+            background-color: #d8daec;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>| Circuito digital</h1></header>
+    <main>
+        <p>
+            Os circuitos digitais ou circuitos lógicos são definidos como circuitos eletrônicos que empregam a utilização de sinais elétricos em apenas dois níveis de corrente (ou tensão) para definir a representação de valores binários.
+        </p>
+        <p>
+            Circuitos lógicos baseiam seu funcionamento na lógica binária, que consiste no fato de que toda informação deve ser expressa na forma de dois dígitos (tanto armazenada, como processada), sendo tais dígitos 0 (zero) ou 1 (um). A partir disto surge a nomeação “digital” (dois dígitos).
+        </p>
+        <p>
+            Este fato auxilia para a representação de estados de dispositivos que funcionam em dois níveis distintos, sendo estes: ligado/desligado (on/off), alto/baixo (high/low), verdadeiro/falso (true/false) entre outros.
+        </p>
+        <img src="img/circuito digital.jpg" alt="circuto digital">
+        <p>
+            Os computadores, telefones celulares e leitores de DVD ou blu-ray são alguns exemplos de aparelhos que baseiam parte do seu funcionamento em circuitos digitais.
+        </p>
+    </main>
+    <main>
+        <h2>Etimologia</h2>
+        <p>
+            A palavra digital vem do latim digitalis, que significa "relacionado aos dedos".
+        </p>
+        <p>
+            Desde que a humanidade desenvolveu o processo de contagem, os dedos foram os instrumentos mais simples e eficientes para contar pequenos valores. O sistema de numeração indo-arábico, o mais usado atualmente, é um sistema de base dez, pois são dez os dedos das duas mãos dos seres humanos. Muitos outros sistemas de numeração usam a base decimal, pois serviam para simbolizar a contagem com os dedos
+        </p>
+        <p>
+            Normalmente com os dedos só é possível contar valores inteiros. Por causa dessa característica, a palavra digital também é usada para se referir a qualquer objeto que trabalha com valores discretos. Ou seja, entre dois valores considerados aceitáveis existe uma quantidade finita de valores aceitáveis.
+        </p>
+        <p>
+            Digital não é sinônimo de eletrônico: por exemplo, o computador eletrônico pode ser chamado de digital porque trabalha com o sistema binário, que é simbolizado por uma sequência finita de zeros e uns, qualquer que seja o tipo de dados.
+        </p>
+        <p>
+            Hoje em dia, porém, não se consegue desvincular a palavra "digital" do sistema informático e de tecnologias ligadas à computação, como, por exemplo, "transmissão digital".
+        </p>
+    </main>
+    <main>
+        <h2>Construção</h2>
+        <p>
+            Circuitos são constituídos pela associação de blocos lógicos.
+        </p>
+        <p>
+            Os blocos lógicos são divididos em 7 classes:
+        </p>
+         <p>
+            <strong>
+            Em lógica binária, ocorrem apenas dois estados:
+            </strong>
+        </p>
+        <ul>
+            <li>
+                Verdadeiro, representado pela letra V, ou pelo número 1.
+            </li>
+            <li>
+                Falso, representado pela letra F, ou pelo número 0.
+            </li>
+        </ul>
+        <img src="img/Portas-Logicas.png" alt="portas logicas">
+        <h3>E (AND)</h3>
+        <p>
+            A conjunção é uma operação na lógica matemática, que pode ser ligada à operação de interseção de conjuntos. A conjunção é representada pelo conectivo lógico ∧, e em programação por AND ou && que = a letra E Ex: João ∧ Maria vão ao shopping A conjunção lógica pode ainda ser representada pelo símbolo do produto.
+        </p>
+        <p>
+            A conjunção é uma operação que verifica a seguinte tabela de verdade:
+        </p>
+        
+        <table>
+            <tr>
+                <th><strong>a</strong></th>
+                <th><strong>b</strong></th>
+                <th><strong>a∧b</strong></th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+        <p>ou de forma equivalente</p>
+           <table>
+            <tr>
+                <th><strong>a</strong></th>
+                <th><strong>b</strong></th>
+                <th><strong>a∧b</strong></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <h3>OU (OR)</h3>
+        <p>
+            Disjunção, operador ou (em inglês: OR), é uma operação lógica utilizada em lógicas digitais e lógicas matemáticas. Seu operador é o símbolo ∨. Em algumas linguagens de programação, o operador normalmente é uma barra vertical (|), e em outras a disjunção é representada por duas barras verticais (||). Pode ainda ser representada pelo símbolo da soma. A disjunção está intimamente relacionada com a operação de união de conjuntos.
+        </p>
+        <p>
+            A disjunção é uma operação que verifica a seguinte tabela de verdade:
+        </p>
+
+         <table>
+            <tr>
+                <th><strong>a</strong></th>
+                <th><strong>b</strong></th>
+                <th><strong>a∧b</strong></th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+        <p>ou de forma equivalente</p>
+           <table>
+            <tr>
+                <th><strong>a</strong></th>
+                <th><strong>b</strong></th>
+                <th><strong>a∧b</strong></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <h3> NÃO (NOT)</h3>
+        <p>
+            Negação, em lógica e matemática, é uma operação unária sobre valores lógicos, por exemplo o valor lógico de uma proposição. Se a proposição é verdadeira, então o operador lógico negação produz o valor falso, e vice versa.
+        </p>
+
+        <p>
+            A tabela de verdade para NÃO p (também grafado com ~p ou ¬p) é a seguinte:
+        </p>
+
+           <table>
+            <tr>
+                <th><strong>p</strong></th>
+                <th><strong>~p</strong></th>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+            </tr>  
+        </table>
+
+        <P>
+            Nesse caso, podemos identificar a negação como sendo ¬p = 1 - p, o que permite uma generalização para outras lógicas, por exemplo lógicas difusas
+        </P>
+        <P>
+            Por exemplo, a disjunção pode ser obtida da conjunção pela negação, porque
+        </P>
+        <P>
+            <STrong>a ∨ b ≡ ¬(¬a ∧ ¬ b)</STrong>
+        </P>
+        <P>
+            Sabendo que a conjunção se identifica no caso clássico à multiplicação (na lógica produto), ou seja a ∧ b ≡ a b temos
+        </P>
+        <P>
+            <STrong>a ∨ b ≡ ¬(¬a ∧ ¬ b) ≡ 1-(1-a)(1-b) ≡ a + b - ab</STrong>
+        </P>
+        <P>
+            e esta é uma forma de generalizar a disjunção, usando apenas a negação e a conjunção.
+        </P>
+
+        <h3>NE (NAND)</h3>
+        <p>
+          O NAND é uma operação lógica binária, através da qual normalmente, os valores de duas proposições produzem um valor falso se e somente se ambos seus operandos forem verdadeiros. Ou seja, o NAND produz um valor verdadeiro se, e somente se pelo menos um de seus operandos for falso.
+        </p>
+        <p>
+            A tabela verdade de p NAND q é como segue:
+        </p>
+
+         <table>
+            <tr>
+                <th><strong>A</strong></th>
+                <th><strong>B</strong></th>
+                <th><strong>S</strong></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </table>
+      
+        <p>
+            O NAND não é usado em sentenças do dia a dia porque gera uma confusão relacionada com uma dupla negação. Está aqui um exemplo do uso da sentença:
+        </p>
+        <p>
+            Operador NAND: Nós morreremos certamente se tivermos água “NAND” comida.
+        </p>
+        <p>
+            Termos comuns: Nós morreremos certamente se não tivermos comida e água.
+        </p>
+        <p>
+            ou ainda: Nós morreremos certamente se não tivermos comida e/ou água. (Este é mais comum em textos que na vida real)
+        </p>
+
+        <h3>NOU (NOR)</h3>
+        <p>
+            A porta NOR, como o nome já indica, é composta pela junção da porta OR e um inversor NOT. Sua representação já indica essa junção:
+        </p>
+        <img src="img/Porta_Lógica_NOR.jpg" alt="porta logica nor">
+        <p>
+            Para entender a porta NOR é necessário lembrar que, quando quaisquer das entradas da porta OR for 1, a saída será 1 e, na porta NOT, a saída será sempre o inverso da entrada (0 torna-se 1 e 1 torna-se 0).
+        </p>
+       
+        <table>
+            <tr>
+                <th><strong>A</strong></th>
+                <th><strong>B</strong></th>
+                <th><strong>S</strong></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <p>
+            Como visto acima, a saída da porta OR com um inversor equivale a porta NOR; logo, o resultado da porta NOR será sempre o resultado invertido da porta OR (o valor 0 torna-se 1 e 1 torna-se 0).
+        </p>
+        <p>
+            Então, pode-se concluir que a condição para a porta OR tenha saída 1 é que quaisquer uma das entradas tenha valor 1. Com a porta NOR, será o contrário: para que se tenha saída 1, nenhuma das entradas deve ter valor 1.
+        </p>
+
+        <h3>OU EXCLUSIVO (XOR)</h3>
+        <p>
+            A disjunção exclusiva (escrito como 
+            ⊕, +, ou ainda ≠) é uma operação sobre dois ou mais valores lógicos, tipicamente os valores de duas proposições, que produz um valor verdadeiro apenas se a quantidade de operadores verdadeiros for ímpar.
+        </p>
+        <p>
+            A tabela de verdade para p XOR q de duas entradas é a seguinte:
+        </p>
+        <table>
+            <tr>
+                <th><strong>p</strong></th>
+                <th><strong>q</strong></th>
+                <th><strong>p⊕q</strong></th>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <h3>NÃO-OU EXCLUSIVO (XNOR)</h3>
+        <p>
+            A porta lógica XNOR, também conhecida pelo termo função coincidência, é a operação inversa da porta XOR (ou - exclusivo). Como o próprio nome expressa, essa função retornará valores iguais a um (retornará sinais elétricos) quando os valores de entrada forem iguais, ou seja, quando coincidirem. A partir dessa afirmação, e se colocássemos A e B como entrada, teríamos apenas duas ocorrências de coincidência, tendo assim duas saídas com valores iguais a um. Em um circuito elétrico, quando as entradas A e B estão recebendo o mesmo valor , mesmo estando negadas ou não, circulará corrente elétrico pelo circuito (A = 0 e B = 0 ou A = 1 e B = 1). Agora, quando as entradas possuem valores diferentes, não circulará corrente pelo circuito (A = 0 e B = 1 ou A = 1 e B = 0). A notação algébrica que representa a operação XNOR é 
+            S=A⊙B.
+        </p>
+        <p>
+            Com as informações acima, a tabela verdade da função fica dessa forma :
+        </p>
+
+         <table>
+            <tr>
+                <th><strong>A</strong></th>
+                <th><strong>B</strong></th>
+                <th><strong>A XNOR B </strong></th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <p>A partir destes blocos lógicos é possível construir praticamente todas as outras associações necessárias.</p>
+        <p>Exemplos:</p>
+
+        <ul>
+            <li><strong>Contadores Binários (flip-flops)</strong>.</li>
+            <li><strong>Unidades lógico-aritméticas (ULA, em inglês, ALU).</strong>.</li>
+        </ul>
+    </main>
+
+    <main>
+        <h2>Circuitos digitais e circuitos analógicos</h2>
+        <p>
+            Circuitos digitais apresentam diversas vantagens se comparados aos circuitos analógicos, tais como:
+        </p>
+        <ol>
+            <li>
+                Facilidade de projetar e armazenar informações;
+            </li>
+            <li>
+                Extensa programabilidade;
+            </li>
+            <li>
+                Maior exatidão e integração;
+            </li>
+            <li>
+                São menos afetados por ruídos originários de flutuações de tensão de alimentação por não dependerem do valor exato da tensão elétrica recebida, e sim da diferença entre os níveis alto e baixo.
+            </li>
+        </ol>
+
+        <p>
+            Uma desvantagem dos circuitos digitais é que o mundo é de natureza analógica, melhor representada em valores contínuos com extensa variação de  <strong>frequência</strong>, o que faz com que todo circuito digital que lide com variáveis físicas de natureza analógica necessite <strong>converter</strong>  tal informação para o meio digital, para então processar, e posteriormente fazer o fluxo inverso, convertendo da natureza digital para a analógica.
+        </p>
+    </main>
+    <main>
+        <h2>Circuitos combinatórios</h2>
+        <p>
+            Um circuito digital é dito combinatório ou combina se a saída depende única e exclusivamente das combinações das variáveis de entrada recebidas em um dado momento, ou seja, o circuito combinacional não é capaz de armazenar valores em "memória", para uso posterior.
+        </p>
+        <p>
+            O funcionamento de todas as <strong>portas lógicas</strong>  básicas e a <strong>lógica booleana</strong> que descrevem e analisam os circuitos feitos a partir da combinação de portas lógicas podem ser classificados como circuitos lógicos combinacionais porque, em qualquer instante de tempo, o nível lógico da saída do circuito depende da combinação dos níveis lógicos presente nas entradas. Um circuito combinacional não possui a característica de <strong>memória</strong> , portanto sua saída depende apenas dos valores atuais das entradas.
+        </p>
+        <p>
+            O circuito combinacional realiza um conjunto de equações booleanas realizando uma determinada operação de processamento da informação, ou seja, a combinação de valores de entrada é vista como uma informação distinta das outras e o conjunto de valores de saídas das operações representa o resultado da operação. Em cada circuito pode ser usada a simplificação de circuitos lógicos pelo método de <strong>mapeamento</strong>  ou teoremas da <strong>álgebra booleana</strong>
+        </p>
+    </main>
+    <main>
+        <h2>Circuitos integrados em sistemas digitais</h2>
+        <p>
+            Os circuitos integrados permitiram a implementação de sistemas digitais mais simples e seguros em relação a sistemas implementados com componentes discretos pois exigem menor manutenção, consomem menos energia e têm menor custo, peso e tamanho.
+        </p>
+        <p>
+            Existem diversas tecnologias usadas atualmente para a produção de circuitos integrados, dentre elas, as mais comuns são:
+        </p>
+        <ul>
+            <li>
+                Lógica Transistor-Transistor.
+            </li>
+            <li>
+                CMOS (Complementary Metal-óxido-semicondutor).
+            </li>
+            <li>
+                NMOS (N-type Metal-oxide-semiconductor Logic).
+            </li>
+            <li>
+                ECL (Emitter-Coupled Logic)
+            </li>
+        </ul>
+
+        <p><strong>Transferência de informações</strong></p>
+
+        <p>
+            De maneira geral, existem duas formas de transferência de dados em CIs, sendo elas:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Paralela</strong> — os bits são transferidos simultaneamente, ou seja, várias filas de dados sofrem transição todas ao mesmo tempo, em um mecanismo de múltiplas filas;
+            </li>
+            <li>
+                <strong>Serial</strong> — os bits são transferidos um de cada vez no mesmo fluxo de dados, em um mecanismo de única fila.
+            </li>
+        </ul>
+    </main>
+    <main>
+        <h2>Performance de circuitos digitais</h2>
+        <p>
+            Circuitos digitais possuem atrasos na propagação de seus sinais. Estes atrasos podem ocorrer devido ao tempo que cada porta lógica leva para gerar um sinal de saída, dada uma mudança no sinal de entrada, e devido à propagação dos sinais através dos fios do circuito.
+        </p>
+        <p>
+            A velocidade de um circuito digital é sempre limitada de acordo com o maior atraso do circuito, causado pelas portas lógicas. O caminho com maior tempo de atraso entre dois pontos do circuito é chamado de <strong>caminho crítico</strong>.
+        </p>
+
+    </main>
+
+     <footer>
+            Simione Mucune &copy;2025
+    </footer>
+</body>
+</html>

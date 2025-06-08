@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscilador</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   
+</head>
+<body>
+    <header><h1>| Osciladores</h1></header>
+    <main>
+    <p>
+        Um oscilador eletrónico (português europeu) ou oscilador eletrônico (português brasileiro), é um circuito eletrónico que produz um sinal electrónico repetitivo, frequentemente uma onda senoidal ou uma onda quadrada, sem a necessidade de aplicação de um sinal externo.
+    </p>
+       
+    <p>
+         Um oscilador é baseado num circuito amplificador e numa malha de realimentação positiva, que induz a uma instabilidade de operação que resulta na oscilação. Para que o circuito oscilador funcione é preciso que duas condições (de Barkhausen) sejam atendidas:
+    </p>
+
+   
+    <nav>
+        <ol>
+            <li>
+                O ganho do circuito fechado deve ser igual a 1
+            </li>
+            <li>
+                O deslocamento total da fase do sinal no circuito deve ser de 0, 2π ou múltiplos de 2π radianos.
+                
+            </li>
+            
+        </ol>
+    </nav>
+
+       <img src="img/temp_image-773.jpg" alt="imagem de onda">
+    </main>
+
+    <main>
+     <h2>
+      Oscilador de baixa frequência 
+     </h2>
+     <p>
+        Um oscilador de baixa frequência é um oscilador electrónico que gera uma corrente alternada em onda entre 0,1 Hz e 10 Hz. Este termo é tipicamente usado no campo dos sintetizadores de áudio, para o distinguir de um oscilador de frequência áudio.
+     </p>
+
+     <img src="img/Oscilador_harmonico_simples.jpg" alt="">
+     </main>
+     <main>
+
+     <h2>
+        Oscilador de Audio
+     </h2>
+
+     <p>
+        Um oscilador de áudio é um oscilador electrónico que gera uma corrente alternada em onda entre 40 Hz e 20 kHz. Essa faixa é usada principalmente nos sintetizadores eletrónicos que simulam sons semelhantes aos produzidos por instrumentos musicais, sendo que o que diferencia os instrumentos entre si são os harmônicos que ele produz e a forma em que se inicia, se mantém e se extingue o som, o início ou "ataque" (também denominado frente de onda) é o início do som tocado, a permanência é o tempo que o sistema produtor de som leva para voltar ao normal desde o início até que não mais se escute o som e o decaimento é a forma adotada pelo sistema para que se restabeleça o equilíbrio energético e se gaste toda a energia armazenada no sistema oscilante seja este couros ou plásticos nos instrumentos de percussão, ou vibrações de aço nos instrumentos de cordas etc. O final longo, ou curto do som ou sinal de áudio analisado, por exemplo, os sons produzidos por instrumentos de percussão como bateria, timbal, bongó são sempre muito fortes no início e de curto tempo de permanência e curtíssimo final. A oscilação audível tem sempre uma frequência fundamental, suas harmónicas e uma outra onda de comando que é chamada de "envolvente" e determina as formas de ataque, e permanência e dentro desta, a velocidade de declinação ou decaimento.
+     </p>
+     
+     </main>
+     <main>
+     <h2>
+        Tipos de Osciladores
+     </h2>
+
+     <img src="img/Escolhendo-o-oscilador-certo-para-o-seu-microcontrolador.jpg" alt="oscilador">
+    
+        <ol>
+            <li>
+               <strong>Oscilador Hartley</strong>
+               <ul>
+                <li>
+                    Princípio de funcionamento: Baseado em um circuito LC (indutor-capacitor), onde a realimentação positiva é obtida através de uma tomada no enrolamento de um indutor dividido (ou dois indutores acoplados).
+                </li>
+                <li>
+                    Aplicações: Transmissores de rádio, VHF, UHF.
+                </li>
+            </ul>
+            </li>
+            
+            <li>
+               <strong>Oscilador Pierce</strong>
+               <ul>
+                <li>
+                    Princípio de funcionamento: Variação do oscilador de cristal; usa um cristal de quartzo como elemento ressonante, com uma configuração semelhante a um inversor CMOS.
+                </li>
+                <li>
+                    Estabilidade: Alta estabilidade em frequência.
+                </li>
+                <li>
+                    Aplicações: Relógios digitais, microcontroladores, circuitos de temporização
+                </li>
+               </ul>
+            </li>
+            <li>
+                <strong>Oscilador Colpitts</strong>
+                <ul>
+                    <li>
+                        Princípio de funcionamento: Também baseado num circuito LC, mas a realimentação vem de um divisor capacitivo (dois capacitores em série).
+                    </li>
+                    <li>
+                        Aplicações: Osciladores RF, circuitos de comunicação.
+                    </li>
+                </ul>
+            </li>
+            <li>
+               <strong>Oscilador Clapp</strong>
+               <ul>
+                <li>
+                    Princípio de funcionamento: Variante do Colpitts com um capacitor adicional em série com o indutor, para melhorar a estabilidade em frequência.
+                </li>
+                <li>
+                    Frequência de oscilação: Mais estável que o Colpitts tradicional.
+                </li>
+                <li>
+                    Aplicações: Geradores de sinal, medições precisas.
+                </li>
+               </ul>
+            </li>
+            <li>
+             <strong>Oscilador Seiler</strong> 
+             <ul>
+                <li>
+                    Princípio de funcionamento: Variante do Colpitts, mas usando um transistor em configuração emissor comum com um indutor para realimentação.
+                </li>
+                <li>
+                    Características: Útil para gerar sinais estáveis em VHF.
+                </li>
+                <li>
+                    Aplicações: Comunicação RF, VHF.
+                </li>
+             </ul>
+            </li>
+            <li>
+               <strong>Oscilador Vackar</strong> 
+               <ul>
+                <li>
+                    Princípio de funcionamento: Projeto otimizado para manter amplitude constante em ampla faixa de sintonia.
+                </li>
+                <li>
+                    Características: Ideal para osciladores de frequência variável (VFO), com baixa distorção e variação mínima de amplitude.
+                </li>
+                <li>
+                    Aplicações: Transmissores de rádio de banda larga, equipamentos de medição.
+                </li>
+               </ul>
+            </li>
+            <li>
+              <strong> Oscilador por Ponte de Wien</strong> 
+              <ul>
+                <li>
+                    Princípio de funcionamento: Usa uma ponte RC como rede de realimentação; amplificador operacional fornece ganho.
+                </li>
+                <li>
+                    Vantagens: Sinal senoidal puro, boa estabilidade.
+                </li>
+                <li>
+                    Aplicações: Geradores de áudio, testes laboratoriais.
+                </li>
+              </ul>  
+            </li>
+
+            <li>
+              <strong> Oscilador de Cristal</strong>
+              <ul>
+                <li>
+                    Princípio de funcionamento: Usa um cristal de quartzo como elemento ressonante com altíssima Q (fator de qualidade), garantindo frequência estável.
+                </li>
+                <li>
+                    Estabilidade: Extremamente alta.
+                </li>
+                <li>
+                    Aplicações: Relógios, comunicações, microcontroladores, GPS.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+                <strong>Oscilador de Onda Quadrada</strong>
+                <ul>
+                    <li>
+                        Princípio de funcionamento: Gera sinais digitais com dois níveis distintos (0 e 1). Pode ser implementado com circuitos integrados digitais ou operacionais.
+                    </li>
+                    <li>
+                        Características: Simples, usado como base para PWM ou sinais digitais.
+                    </li>
+                    <li>
+                        Aplicações: Relógios digitais, sinais de comando, microcontroladores.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+             <strong>Oscilador de Relaxação</strong>
+             <ul>
+                <li>
+                    Princípio de funcionamento: Carrega e descarrega um componente (geralmente um capacitor) de forma periódica, criando uma forma de onda não senoidal (geralmente dente-de-serra ou triangular).
+                </li>
+                <li>
+                    Exemplo: Oscilador com temporizador 555.
+                </li>
+                <li>
+                    Aplicações: Temporizadores, geração de rampas, circuitos de controle.
+                </li>
+             </ul>
+            </li>
+
+            <li>
+                <strong>Aplicações: Temporizadores, geração de rampas, circuitos de controle.</strong>
+                <ul>
+                    <li>
+                        Princípio de funcionamento: Não possui estado estável — alterna continuamente entre dois estados. É um tipo de oscilador de relaxação.
+                    </li>
+                    <li>
+                        Exemplo clássico: Circuito com dois transístores ou um 555 em modo astável.
+                    </li>
+                    <li>
+                      Aplicações: Pisca-piscas, geração de clock, alarmes.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Oscilador de Bloqueio (Blocking Oscillator)</strong>
+                <ul>
+                    <li>
+                        Princípio de funcionamento: Usa um transformador com realimentação positiva rápida. Um pulso liga um transístor, que rapidamente é desligado por autoindução.
+                    </li>
+                    <li>
+                        Características: Gera pulsos curtos e intensos.
+                    </li>
+                    <li>
+                        Aplicações: Fontes chaveadas, conversores DC-DC, circuitos de pulso.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+     </main>
+       
+     <footer>
+            Simione Mucune &copy;2025
+    </footer>
+</body>
+</html>
