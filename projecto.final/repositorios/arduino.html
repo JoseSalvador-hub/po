@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduíno</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     
+</head>
+<body>
+    <header><h1>| Arduíno</h1></header>
+    
+    <main>
+        <p>
+            O Arduino é uma plataforma de programação de código aberto projetada para 
+            tornar a experiência com componentes eletrónicos divertida e intuitiva. O Arduino 
+            tem uma linguagem de programação própria e simplificada e uma vasta rede de 
+            suporte e milhares de potenciais usos, tornando-se a plataforma perfeita para 
+            entusiastas iniciantes e avançados.
+        </p>
+      
+         <p>
+            Na informática, o Arduino é uma série de microcomputadores de placa única com componentes integrados. Série de plataformas programáveis de prototipagem eletrônica (para testes e projetos eletrônicos) de placa única e hardware livre (código aberto), que permite aos usuários criar objetos eletrônicos interativos e independentes, usando o microcontrolador Atmel AVR ou ARM com suporte de entrada/saída embutido, A plataforma foi criada em 2005 na Itália, com o objetivo de criar ferramentas de baixo custo, acessíveis, flexíveis, independentes e de fácil uso para principiantes, amadores e profissionais, com foco especial naqueles que não têm acesso a controladores sofisticados e ferramentas complexas. Esta plataforma é atualmente fabricada pela companhia italiana Smart Projects e também pela companhia estadunidense SparkFun Electronics.
+        </p> 
+        <img src="img/A_highly_realistic_image_of_an_Arduino_board_on_a_.webp" alt="Arduíno"> 
+            
+   </div>
+   </main>
+   <main>
+
+        <h2>É um computador para todos</h2>
+        <p>
+            Podemos pensar no Arduino como o filho dos computadores tradicionais. O 
+            Arduino é essencialmente um pequeno computador. É capaz de receber entradas 
+            (como o apertar de um botão ou a leitura de um sensor de luz) e interpretar essas 
+            informações para controlar várias saídas (colocar uma luz LED a piscar ou ligar 
+            um motor elétrico).
+        </p>
+        <p>
+            A placa Arduino é muito parecida com um 
+            computador de pequeno porte, sendo composta pelo
+            <strong>microcontrolador, </strong><strong>memória RAM,</strong>   <strong>memória secundária(memória flash), </strong><strong>clock e comunicação USB</strong>
+            entre outras 
+            funcionalidades. Temos o modelo mais 
+            popular dos Arduinos que é o Uno R3, porém, para os 
+            projetos deste livro qualquer outro modelo de Arduino 
+            pode ser usado sem restrições.
+        </p>
+        </main>
+        <main>
+
+        <h2>Como funciona o Arduíno</h2>
+
+        <p>
+            A placa Arduino funciona de forma semelhante à placa de um computador.
+            Como mencionamos, ela armazena um software embarcado, que fará o
+            controle sobre as ações que serão realizadas por ela. Além disso, ela
+            contém diversos componentes, confira os principais a seguir.
+        </p>
+
+        <h3><strong>Microcontrolador</strong></h3>
+
+        <img src="img/Microcontrolador.webp" alt="microcontrolador">
+
+        <p>Um microcontrolador é uma peça que contém um ou mais processadores,
+            uma memória RAM e uma interface compatível com entrada e saída de
+            periféricos (mouse, teclado, etc). Podemos dizer também que o
+            microcontrolador é um “mini computador”, já que com apenas a sua
+            tecnologia conseguimos processar dados e executar tarefas de informática
+            básica no Arduino.
+            Para cada tipo de Arduino, temos um diferente tipo de microcontrolador,
+            tais como:</p>
+
+            <ul>
+                <li>
+                    Arduino Uno R3 possui o microcontrolador ATmega328P.
+                </li>
+                <li>
+                    Arduino Leonardo possui o microcontrolador ATmega32U4.
+                </li>
+                <li>
+                    Arduino Nano Every possui o microcontrolador ATmega4809.
+                </li>
+                <li>
+                    Arduino Micro possui o microcontrolador ATmega32U4.
+                </li>
+                <li>
+                    Arduino Nano 33 BLE possui o microcontrolador nRF52840.
+                </li>
+            </ul>
+
+            <h3><strong>Fonte de alimentação</strong></h3>
+
+            <img src="img/arduino_servo_fonte_ext (1).png" alt="fonte de alimentação">
+
+            <p>A placa Arduino contém duas formas de ser energizada. A primeira é por
+                meio da conexão com um cabo USB tipo B, que pode ser conectado a um
+                computador, por exemplo. É por essa conexão, inclusive, que enviamos o
+                software para a placa.
+                Outra forma de energizar a placa é com a fonte de alimentação de parede,
+                dessas que contém um conector cilíndrico. Entretanto, é preciso observar a
+                voltagem da fonte, que deve ser entre 6 e 12 Volts, conforme o modelo da
+                placa. Vale ressaltar que é perigoso queimar a placa se utilizarmos fonte de
+                alimentação superior a 20 Volts.
+                </p>
+
+                <h3><strong>Pinos de conexões</strong></h3>
+
+                <img src="img/barra-de-pinos-8-pernas-lado-qaewt3d8o6.webp" alt="Pino de conexao">
+
+                <p>
+                    A placa Arduino contém diversos pinos de conexões que servem para a
+                    construção de circuitos, entre eles:
+                </p>
+
+                <ul>
+                    <li>
+                     <strong>GND:</strong> é a abreviação de Ground, que significa terra. Portanto, ele é
+                     utilizado para o aterramento do circuito e, assim, evitar     choques
+                     elétricos;
+                    </li>
+                    <li>
+                     <strong>pinos de voltagens:</strong>  são pinos que fornecem energia, geralmente são
+                      de 5 e 3,3 Volts;                        
+                    </li>
+                    <li>
+                    <strong>analógicos:</strong>  são pinos que leem sinais analógicos. Portanto, eles
+                     podem ler um sensor analógico e converter para um sinal digital;
+                    </li>
+                    <li>
+                    <strong>digitais:</strong>  são pinos que entendem sinais digitais (0 e 1). Eles servem
+                     para determinar se um botão foi pressionado, por exemplo, e enviar
+                     comandos como o de ascender a luz.
+                    </li>
+                    <li>
+                    <strong>conector USB:</strong>  permite a comunicação entre o computador
+                    responsável por programar a placa e a placa arduíno.
+                    </li>
+                </ul>
+
+                <h3><strong>Botão de reset</strong></h3>
+
+                <img src="img/uno-reset-button.png" alt="botao de reset">
+
+                <p>
+                 A placa Arduino contém um botão de reset, que serve para reiniciar a placa.
+                 Esse recurso é muito útil especialmente na fase de testes do projeto, em que
+                 podem ocorrer falhas que causem o travamento do sistema.
+                </p>
+
+                <h3><strong>Indicador LED de energia</strong></h3>
+
+                <img src="img/indicaco de led.png" alt="indicador de energia">
+
+                <p>
+                 A placa Arduino contém um pequeno LED para indicar quando ela está
+                 energizada, seja por meio da conexão USB, seja por fonte de energia. O
+                 importante é que ela sempre deve estar acesa quando receber energia. Caso
+                 contrário, pode indicar alguma inconsistência no circuito.
+                </p>
+        </main>
+        <main>
+
+        <h2>Modelos de placas de Arduino</h2>
+
+        <p>
+        Existem diversos modelos de placas Arduino. Cada uma contém um
+        microcontrolador, que varia de acordo com o modelo. Elas também se
+        diferenciam pela capacidade de memória, clock e pela tensão de entrada e
+        de operação. Além disso, elas oferecem a possibilidade de conectar
+        recursos adicionais. Confira algumas delas a seguir.
+        </p>
+
+        <ol>
+            <li>
+            <strong>Arduino Uno R3</strong> 
+            </li>
+            <p>
+            A placa Uno R3 é ideal para quem está começando a utilizar o Arduino,
+            pois contém a configuração necessária para projetos iniciais. Seus
+            principais recursos são:</p>
+
+            <ul>
+                <li>
+                    6 pinos de entradas analógicas;
+                </li>
+                <li>
+                 14 entradas e saídas digitais, no qual 6 pinos podem ser utilizados
+                 como saída PWM (Pulse Width Modulation), que funciona como se
+                 adicionássemos intensidade no sinal. Dessa forma, ela pode ser
+                 utilizada, por exemplo, como volume, para regular a intensidade de
+                 brilho e muito mais.
+                </li>
+            </ul>
+            <p>
+            Vale ressaltar que os pinos digitais que funcionam com PWM contém um
+            sinal de til “~” ao lado do número do pino correspondente. Dessa forma,
+            fica mais fácil identificar quais têm essa característica.
+            </p>
+            <li>
+             <strong>Arduino Pro Mini</strong>   
+            </li>
+            <p>
+             A placa Arduino Pro Mini é uma placa criada pela SparkFun Electronics e
+             com dois tipos de versões, uma com 3.3V e 8 MHz, e a outra com 5.5V e
+             16 MHz. Além disso, possui as seguintes especificações:
+            </p>
+
+            <ul>
+                <li>
+                    8 pinos de entradas analógicas.
+                </li>
+                <li>
+                    20 entradas e saídas digitais, no qual 6 pinos podem ser utilizados 
+                </li>
+                <li>
+                    Também possui um botão de reset.
+                </li>
+            </ul>
+            <p>
+             O seu layout é compatível com o Arduino Mini, pode ser carregado através
+             de um USB e é focado para instalações semi-permanentes.
+            </p> 
+            <li>
+            <strong>Arduino Leonardo</strong>    
+            </li>
+
+            <p>
+             A placa Arduino Leonardo é um modelo com um pouco mais de recursos
+             que o modelo anterior, pois ela contém:
+            </p>
+
+            <ul>
+            <li>7 saídas PWM;</li> 
+            <li>12 entradas analógicas;</li> 
+            <li>20 entradas e saídas digitais.</li>  
+            </ul>
+
+            <p>
+             Ao conectar essa placa no computador, ela pode ser reconhecida como um
+             mouse ou um teclado. Portanto, esse modelo é mais indicado para a
+             realização de projetos de automação em que o recurso desenvolvido fará
+             interações com o computador.
+            </p>
+
+            <li><strong>Arduino Mega R3</strong></li>
+
+            <p>
+             A placa Arduino Mega R3 é uma versão da placa Uno, só que com muito
+             mais pinos de entrada e saída, entre eles:
+            </p>
+
+            <ul>
+                <li>54 entradas digitais, em que 14 que funcionam como PWM;
+                </li>
+                <li>16 entradas analógicas.</li>
+            </ul>
+            
+            <p>
+             Por ter essa grande quantidade de pinos, esse modelo de placa é muito útil
+             para projetos que utilizam muitos botões, por exemplo.
+            </p>
+
+            <li> <strong>Arduino Due</strong></li>
+
+            <p>
+            A placa Arduino Due é uma das mais rápidas entre os modelos disponíveis.
+            Isso porque ela contém um microcontrolador arm de 32 bits. Além disso,
+            ela oferece os seguintes recursos:
+            </p>
+
+            <ul>
+                <li>
+                54 entradas e saídas digitais, em que 12 podem ser utilizadas como PWM;
+                </li>
+                <li>12 entradas analógicas;</li>
+                <li>4 interfaces seriais.</li>
+            </ul>
+
+            <li><strong>Arduino Micro</strong></li>
+
+            <p>
+             O Arduino Micro é muito semelhante ao Arduino Leonardo, possuindo
+             amplo suporte ao USB e sendo muito utilizável para os periféricos de
+             mouse e teclado. Foi desenvolvido em conjunto com a Adafruit e possui as
+             seguintes características:
+            </p>
+
+            <ul>
+                <li>20 entradas digitais.</li>
+                <li>7 saídas PWM.</li>
+                <li>12 entradas analógicas.</li>
+            </ul>
+
+            <li><strong>Arduino Nano</strong></li>
+
+            <p>
+             O Arduino Nano é uma das menores placas fabricadas, o seu carregamento
+             é feito através de uma porta mini-usb. Além disso possui os seguintes
+             atributos:
+            </p>
+
+            <ul>
+                <li>22 entradas digitais.</li>
+                <li>6 saídas PWM.</li>
+                <li>8 entradas analógicas.</li>
+            </ul>
+
+            <li><strong>Sensores e módulos</strong></li>
+
+            <p> 
+             Além das placas Arduino, existem uma série de sensores e módulos que
+             podem ser conectados a ela para agregar funcionalidades. Entre eles:
+            </p>
+
+            <ul>
+                <li>sensor para medir a intensidade da luz;</li>
+                <li>sensor de temperatura;</li>
+                <li>sensor para medir o grau de inclinação;</li>
+                <li>medidor de proximidade;</li>
+                <li>módulo de conexão com a Internet.</li>
+            </ul>
+        </ol>
+
+        </main>
+        <main>
+
+        <h2>Aplicações</h2>
+
+        <p>
+            A principal finalidade do Arduino num sistema é facilitar a prototipagem, implementação ou emulação do controle de sistemas interativos, a nível doméstico, comercial ou móvel, da mesma forma que o CLP controla sistemas de funcionamento industriais. Com ele é possível enviar ou receber informações de basicamente qualquer sistema eletrônico, como identificar a aproximação de uma pessoa e variar a intensidade da luz do ambiente conforme a sua chegada. Ou abrir as janelas de um escritório de acordo com a intensidade da luz do sol e temperatura ambiente.
+        </p>
+        <p>
+            Os campos de atuação para o controle de sistemas são imensos, podendo ter aplicações na área de impressão 3D, robótica, engenharia de transportes, engenharia agronômica, musical. ou até mesmo em ambiente escolar, para o desenvolvimento de experimentos otimizando assim a aprendizagem dos alunos tanto na área de física quanto de química.
+        </p>
+     </main>
+    <footer>
+           Simione Mucune &copy;2025
+   </footer>
+</body>
+</html>
